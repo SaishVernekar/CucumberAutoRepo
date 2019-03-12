@@ -62,6 +62,7 @@ public class PostJSONwithschema {
 		String idValue = resp.getBody().jsonPath().get("id");
 		int idInt = Integer.parseInt(idValue);
 		Assert.assertTrue(idInt > 0);
+		System.out.println("Id is greater than zero and not null");
 		
 	}
 
